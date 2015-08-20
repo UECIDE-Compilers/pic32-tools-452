@@ -1,18 +1,6 @@
-pic32-tools (4.5.1-2) uecide; urgency=low
+pic32-tools (4.5.1-0p0) uecide; urgency=low
 
-  * Fixed location of map file
+  * Initial import
 
- -- Matt Jenkins <matt@majenko.co.uk>  Wed, 4 Mar 2015 11:06:27 +0000
-
-pic32-tools (4.5.1-1) uecide; urgency=low
-
-  * Improved error and warning detection
-
- -- Matt Jenkins <matt@majenko.co.uk>  Wed, 4 Mar 2015 11:06:27 +0000
-
-pic32-tools (4.5.1) uecide; urgency=low
-
-  * Initial Release.
-
- -- Matt Jenkins <matt@majenko.co.uk>  Sat, 24 Jan 2015 23:30:27 +0000
+ -- Matt Jenkins <matt@majenko.co.uk>  Thu, 20 Aug 2015 19:57:54 +0100
 
