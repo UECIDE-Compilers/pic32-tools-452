@@ -17,6 +17,7 @@ install-linux-amd64:
 	mkdir -p ${DESTDIR}/compilers
 	mv tmp/pic32-tools ${DESTDIR}/compilers/pic32-tools
 	cp config/compiler.txt ${DESTDIR}/compilers/pic32-tools/compiler.txt
+	cp config/libc.a ${DESTDIR}/compilers/pic32-tools/pic32mx/lib/libc.a
 	chmod -R 0755 ${DESTDIR}/compilers/pic32-tools/bin/*
 	chmod -R 0755 ${DESTDIR}/compilers/pic32-tools/pic32mx/bin/*
 	rm -rf tmp
@@ -30,6 +31,7 @@ install-linux-i386:
 	mkdir -p ${DESTDIR}/compilers
 	mv tmp/pic32-tools ${DESTDIR}/compilers/pic32-tools
 	cp config/compiler.txt ${DESTDIR}/compilers/pic32-tools/compiler.txt
+	cp config/libc.a ${DESTDIR}/compilers/pic32-tools/pic32mx/lib/libc.a
 	chmod -R 0755 ${DESTDIR}/compilers/pic32-tools/bin/*
 	chmod -R 0755 ${DESTDIR}/compilers/pic32-tools/pic32mx/bin/*
 	rm -rf tmp
@@ -43,6 +45,7 @@ install-linux-armhf:
 	mkdir -p ${DESTDIR}/compilers
 	mv tmp/pic32-tools ${DESTDIR}/compilers/pic32-tools
 	cp config/compiler.txt ${DESTDIR}/compilers/pic32-tools/compiler.txt
+	cp config/libc.a ${DESTDIR}/compilers/pic32-tools/pic32mx/lib/libc.a
 	chmod -R 0755 ${DESTDIR}/compilers/pic32-tools/bin/*
 	chmod -R 0755 ${DESTDIR}/compilers/pic32-tools/pic32mx/bin/*
 	rm -rf tmp
@@ -56,6 +59,7 @@ install-linux-armel:
 	mkdir -p ${DESTDIR}/compilers
 	mv tmp/pic32-tools ${DESTDIR}/compilers/pic32-tools
 	cp config/compiler.txt ${DESTDIR}/compilers/pic32-tools/compiler.txt
+	cp config/libc.a ${DESTDIR}/compilers/pic32-tools/pic32mx/lib/libc.a
 	chmod -R 0755 ${DESTDIR}/compilers/pic32-tools/bin/*
 	chmod -R 0755 ${DESTDIR}/compilers/pic32-tools/pic32mx/bin/*
 	rm -rf tmp
@@ -69,6 +73,7 @@ install-windows-amd64:
 	mkdir -p ${DESTDIR}/compilers
 	mv tmp/pic32-tools ${DESTDIR}/compilers/pic32-tools
 	cp config/compiler.txt ${DESTDIR}/compilers/pic32-tools/compiler.txt
+	cp config/libc.a ${DESTDIR}/compilers/pic32-tools/pic32mx/lib/libc.a
 	chmod -R 0755 ${DESTDIR}/compilers/pic32-tools/bin/*
 	chmod -R 0755 ${DESTDIR}/compilers/pic32-tools/pic32mx/bin/*
 	rm -rf tmp
@@ -82,6 +87,7 @@ install-windows-i386:
 	mkdir -p ${DESTDIR}/compilers
 	mv tmp/pic32-tools ${DESTDIR}/compilers/pic32-tools
 	cp config/compiler.txt ${DESTDIR}/compilers/pic32-tools/compiler.txt
+	cp config/libc.a ${DESTDIR}/compilers/pic32-tools/pic32mx/lib/libc.a
 	chmod -R 0755 ${DESTDIR}/compilers/pic32-tools/bin/*
 	chmod -R 0755 ${DESTDIR}/compilers/pic32-tools/pic32mx/bin/*
 	rm -rf tmp
@@ -95,6 +101,7 @@ install-darwin-amd64:
 	mkdir -p ${DESTDIR}/compilers
 	mv tmp/pic32-tools ${DESTDIR}/compilers/pic32-tools
 	cp config/compiler.txt ${DESTDIR}/compilers/pic32-tools/compiler.txt
+	cp config/libc.a ${DESTDIR}/compilers/pic32-tools/pic32mx/lib/libc.a
 	chmod -R 0755 ${DESTDIR}/compilers/pic32-tools/bin/*
 	chmod -R 0755 ${DESTDIR}/compilers/pic32-tools/pic32mx/bin/*
 	rm -rf tmp
