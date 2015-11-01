@@ -1,3 +1,9 @@
+pic32-tools (4.5.1-2p4) uecide; urgency=low
+
+  * Added fix stub function for missing fstat
+
+ -- Matt Jenkins <matt@majenko.co.uk>  Mon, 21 Sep 2015 00:54:53 +0100
+
 pic32-tools (4.5.1-2p3) uecide; urgency=low
 
   * Added deps preprocessor key
