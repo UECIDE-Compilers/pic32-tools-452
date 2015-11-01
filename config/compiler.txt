@@ -5,14 +5,14 @@ revision=3
 description=PIC32 GCC compiler version 4.5.1
 compiler.smalldata=1024
 
-optimize=-Os
+optimize=${option:optimize.flag}
 warnings=
 extra.flags=
 
-cflags=-G${compiler.smalldata}::-g::-O2::${warnings}::-ffunction-sections::-fdata-sections::-mno-smart-io::-mdebugger::-Wcast-align::-fno-short-double::${extra.flags}
-cppflags=-G${compiler.smalldata}::-g::-O2::${warnings}::-fno-exceptions::-ffunction-sections::-fdata-sections::-mno-smart-io::-mdebugger::-Wcast-align::-fno-short-double::${extra.flags}
+cflags=${optimize}::-G${compiler.smalldata}::-g::${warnings}::-ffunction-sections::-fdata-sections::-mno-smart-io::-mdebugger::-Wcast-align::-fno-short-double::${extra.flags}
+cppflags=${optimize}::-G${compiler.smalldata}::-g::${warnings}::-fno-exceptions::-ffunction-sections::-fdata-sections::-mno-smart-io::-mdebugger::-Wcast-align::-fno-short-double::${extra.flags}
 ldflags=${optimize}::-Wl,--gc-sections,-Map,${build.path}/${filename}.map::-mdebugger::-mno-peripheral-libs::-nostartfiles::${extra.flags}
-asflags=-O2::-g1::-Wa,--gdwarf-2::${warnings}::${extra.flags}
+asflags=${optimize}::-g1::-Wa,--gdwarf-2::${warnings}::${extra.flags}
 
 gcc=${compiler:root}/bin/pic32-gcc
 gpp=${compiler:root}/bin/pic32-g++
@@ -51,3 +51,10 @@ options.warnings.err.flags=-Wall::-Werror
 options.warnings.off.name=Suppress warnings
 options.warnings.off.flags=-w
 
+options.optimize.name=Optimization
+options.optimize.default=size
+options.optimize.purge=true
+options.optimize.size.name=Smallest size
+options.optimize.size.flag=-Os
+options.optimize.speed.name=Fastest execution
+options.optimize.speed.flag=-O3

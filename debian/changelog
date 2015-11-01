@@ -1,3 +1,15 @@
+pic32-tools (4.5.1-2p6) uecide; urgency=low
+
+  * Switched to upkg-buildpackage
+
+ -- Matt Jenkins <matt@majenko.co.uk>  Sun, 1 Nov 2015 11:40:32 +0000
+
+pic32-tools (4.5.1-2p5) uecide; urgency=low
+
+  * Added preprocessor recipe
+
+ -- Matt Jenkins <matt@majenko.co.uk>  Sun, 1 Nov 2015 11:40:01 +0000
+
 pic32-tools (4.5.1-2p4) uecide; urgency=low
 
   * Added fix stub function for missing fstat
