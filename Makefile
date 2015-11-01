@@ -107,10 +107,10 @@ install-darwin-amd64:
 	rm -rf tmp
 
 packages:
-	dpkg-buildpackage -B -alinux-amd64
-	dpkg-buildpackage -B -alinux-i386
-	dpkg-buildpackage -B -alinux-armhf
-	dpkg-buildpackage -B -alinux-armel
-	dpkg-buildpackage -B -adarwin-amd64
-	dpkg-buildpackage -B -awindows-amd64
-	dpkg-buildpackage -B -awindows-i386
+	upkg-buildpackage -B -alinux-amd64
+	upkg-buildpackage -B -alinux-i386
+	upkg-buildpackage -B -alinux-armhf
+	upkg-buildpackage -B -alinux-armel
+	upkg-buildpackage -B -adarwin-amd64
+	upkg-buildpackage -B -awindows-amd64
+	upkg-buildpackage -B -awindows-i386
