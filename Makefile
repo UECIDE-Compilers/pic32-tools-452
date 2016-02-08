@@ -10,10 +10,11 @@ install: install-${DEB_HOST_ARCH}
 
 install-linux-amd64:
 	echo "Downloading compiler archive..."
-	wget -q -c -O pic32-tools-linux-amd64.zip https://www.dropbox.com/sh/6prtzze1ts8gx4d/AACkXhxIjdqBmQECys1oeQTEa/pic32-tools-chipKIT-cxx-master-Linux32-image.zip?dl=1
+	wget -q -c -O pic32-tools-linux-amd64.zip https://github.com/chipKIT32/chipKIT-compiler-builds/releases/download/1.40-rc.2/pic32-tools-chipKIT-cxx-master-Linux32-image.zip
 	mkdir -p tmp
 	echo "Extracting compiler archive..."
 	unzip -qq -d tmp pic32-tools-linux-amd64.zip
+	find tmp -name '*\*-gdb.py' -delete
 	mkdir -p ${DESTDIR}/compilers
 	mv tmp/pic32-tools ${DESTDIR}/compilers/pic32-tools
 	cp config/compiler.txt ${DESTDIR}/compilers/pic32-tools/compiler.txt
@@ -24,10 +25,11 @@ install-linux-amd64:
 
 install-linux-i386:
 	echo "Downloading compiler archive..."
-	wget -q -c -O pic32-tools-linux-i386.zip https://www.dropbox.com/sh/6prtzze1ts8gx4d/AACkXhxIjdqBmQECys1oeQTEa/pic32-tools-chipKIT-cxx-master-Linux32-image.zip?dl=1
+	wget -q -c -O pic32-tools-linux-i386.zip https://github.com/chipKIT32/chipKIT-compiler-builds/releases/download/1.40-rc.2/pic32-tools-chipKIT-cxx-master-Linux32-image.zip
 	mkdir -p tmp
 	echo "Extracting compiler archive..."
 	unzip -qq -d tmp pic32-tools-linux-i386.zip
+	find tmp -name '*\*-gdb.py' -delete
 	mkdir -p ${DESTDIR}/compilers
 	mv tmp/pic32-tools ${DESTDIR}/compilers/pic32-tools
 	cp config/compiler.txt ${DESTDIR}/compilers/pic32-tools/compiler.txt
@@ -38,10 +40,11 @@ install-linux-i386:
 
 install-linux-armhf:
 	echo "Downloading compiler archive..."
-	wget -q -c -O pic32-tools-linux-armhf.zip https://www.dropbox.com/sh/6prtzze1ts8gx4d/AAATHCQmzqCx-Ruk_U68XTbEa/pic32-tools-chipKIT-cxx-master-arm-linux-image.zip?dl=1
+	wget -q -c -O pic32-tools-linux-armhf.zip https://github.com/chipKIT32/chipKIT-compiler-builds/releases/download/1.40-rc.2/pic32-tools-chipKIT-cxx-master-arm-linux-image.zip
 	mkdir -p tmp
 	echo "Extracting compiler archive..."
 	unzip -qq -d tmp pic32-tools-linux-armhf.zip
+	find tmp -name '*\*-gdb.py' -delete
 	mkdir -p ${DESTDIR}/compilers
 	mv tmp/pic32-tools ${DESTDIR}/compilers/pic32-tools
 	cp config/compiler.txt ${DESTDIR}/compilers/pic32-tools/compiler.txt
@@ -52,10 +55,11 @@ install-linux-armhf:
 
 install-linux-armel:
 	echo "Downloading compiler archive..."
-	wget -q -c -O pic32-tools-linux-armel.zip https://www.dropbox.com/sh/6prtzze1ts8gx4d/AAATHCQmzqCx-Ruk_U68XTbEa/pic32-tools-chipKIT-cxx-master-arm-linux-image.zip?dl=1
+	wget -q -c -O pic32-tools-linux-armel.zip https://github.com/chipKIT32/chipKIT-compiler-builds/releases/download/1.40-rc.2/pic32-tools-chipKIT-cxx-master-arm-linux-image.zip
 	mkdir -p tmp
 	echo "Extracting compiler archive..."
 	unzip -qq -d tmp pic32-tools-linux-armel.zip
+	find tmp -name '*\*-gdb.py' -delete
 	mkdir -p ${DESTDIR}/compilers
 	mv tmp/pic32-tools ${DESTDIR}/compilers/pic32-tools
 	cp config/compiler.txt ${DESTDIR}/compilers/pic32-tools/compiler.txt
@@ -66,10 +70,11 @@ install-linux-armel:
 
 install-windows-amd64:
 	echo "Downloading compiler archive..."
-	wget -q -c -O pic32-tools-windows-amd64.zip https://www.dropbox.com/sh/6prtzze1ts8gx4d/AADtVlvq7wx_rppCkJl-hIRra/pic32-tools-chipKIT-cxx-master-win32-image.zip?dl=1
+	wget -q -c -O pic32-tools-windows-amd64.zip https://github.com/chipKIT32/chipKIT-compiler-builds/releases/download/1.40-rc.2/pic32-tools-chipKIT-cxx-master-win32-image.zip
 	mkdir -p tmp
 	echo "Extracting compiler archive..."
 	unzip -qq -d tmp pic32-tools-windows-amd64.zip
+	find tmp -name '*\*-gdb.py' -delete
 	mkdir -p ${DESTDIR}/compilers
 	mv tmp/pic32-tools ${DESTDIR}/compilers/pic32-tools
 	cp config/compiler.txt ${DESTDIR}/compilers/pic32-tools/compiler.txt
@@ -80,10 +85,11 @@ install-windows-amd64:
 
 install-windows-i386:
 	echo "Downloading compiler archive..."
-	wget -q -c -O pic32-tools-windows-i386.zip https://www.dropbox.com/sh/6prtzze1ts8gx4d/AADtVlvq7wx_rppCkJl-hIRra/pic32-tools-chipKIT-cxx-master-win32-image.zip?dl=1
+	wget -q -c -O pic32-tools-windows-i386.zip https://github.com/chipKIT32/chipKIT-compiler-builds/releases/download/1.40-rc.2/pic32-tools-chipKIT-cxx-master-win32-image.zip
 	mkdir -p tmp
 	echo "Extracting compiler archive..."
 	unzip -qq -d tmp pic32-tools-windows-i386.zip
+	find tmp -name '*\*-gdb.py' -delete
 	mkdir -p ${DESTDIR}/compilers
 	mv tmp/pic32-tools ${DESTDIR}/compilers/pic32-tools
 	cp config/compiler.txt ${DESTDIR}/compilers/pic32-tools/compiler.txt
@@ -94,10 +100,11 @@ install-windows-i386:
 
 install-darwin-amd64:
 	echo "Downloading compiler archive..."
-	wget -q -c -O pic32-tools-darwin-amd64.zip https://www.dropbox.com/sh/6prtzze1ts8gx4d/AAC6cF49-VenaJjnfN6yYIuda/pic32-tools-chipKIT-cxx-master-Darwin-image.zip?dl=1
+	wget -q -c -O pic32-tools-darwin-amd64.zip https://github.com/chipKIT32/chipKIT-compiler-builds/releases/download/1.40-rc.2/pic32-tools-chipKIT-cxx-master-Darwin-image.zip
 	mkdir -p tmp
 	echo "Extracting compiler archive..."
 	unzip -qq -d tmp pic32-tools-darwin-amd64.zip
+	find tmp -name '*\*-gdb.py' -delete
 	mkdir -p ${DESTDIR}/compilers
 	mv tmp/pic32-tools ${DESTDIR}/compilers/pic32-tools
 	cp config/compiler.txt ${DESTDIR}/compilers/pic32-tools/compiler.txt
