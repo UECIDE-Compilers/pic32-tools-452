@@ -1,40 +1,58 @@
-pic32-tools (4.5.1-2p6) uecide; urgency=low
+pic32-tools-452 (4.5.2-2p9) uecide; urgency=low
+
+  * Removed illegally named files before building deb archives
+
+ -- Matt Jenkins <matt@majenko.co.uk>  Mon, 8 Feb 2016 11:12:58 +0000
+
+pic32-tools-452 (4.5.2-2p8) uecide; urgency=low
+
+  * Fixed binary compilation on Windows
+
+ -- Matt Jenkins <matt@majenko.co.uk>  Thu, 10 Dec 2015 14:51:47 +0000
+
+pic32-tools-452 (4.5.2-2p7) uecide; urgency=low
+
+  * Added optimization options
+
+ -- Matt Jenkins <matt@majenko.co.uk>  Sun, 1 Nov 2015 12:47:05 +0000
+
+pic32-tools-452 (4.5.2-2p6) uecide; urgency=low
 
   * Switched to upkg-buildpackage
 
  -- Matt Jenkins <matt@majenko.co.uk>  Sun, 1 Nov 2015 11:40:32 +0000
 
-pic32-tools (4.5.1-2p5) uecide; urgency=low
+pic32-tools-452 (4.5.2-2p5) uecide; urgency=low
 
   * Added preprocessor recipe
 
  -- Matt Jenkins <matt@majenko.co.uk>  Sun, 1 Nov 2015 11:40:01 +0000
 
-pic32-tools (4.5.1-2p4) uecide; urgency=low
+pic32-tools-452 (4.5.2-2p4) uecide; urgency=low
 
   * Added fix stub function for missing fstat
 
  -- Matt Jenkins <matt@majenko.co.uk>  Mon, 21 Sep 2015 00:54:53 +0100
 
-pic32-tools (4.5.1-2p3) uecide; urgency=low
+pic32-tools-452 (4.5.2-2p3) uecide; urgency=low
 
   * Added deps preprocessor key
 
  -- Matt Jenkins <matt@majenko.co.uk>  Tue, 8 Sep 2015 16:21:19 +0100
 
-pic32-tools (4.5.1-2p2) uecide; urgency=low
+pic32-tools-452 (4.5.2-2p2) uecide; urgency=low
 
   * Reset base version
 
  -- Matt Jenkins <matt@majenko.co.uk>  Thu, 20 Aug 2015 20:00:34 +0100
 
-pic32-tools (4.5.1-2p1) uecide; urgency=low
+pic32-tools-452 (4.5.2-2p1) uecide; urgency=low
 
   * Added boot hook
 
  -- Matt Jenkins <matt@majenko.co.uk>  Thu, 20 Aug 2015 19:59:58 +0100
 
-pic32-tools (4.5.1-2p0) uecide; urgency=low
+pic32-tools-452 (4.5.2-2p0) uecide; urgency=low
 
   * Initial import
 

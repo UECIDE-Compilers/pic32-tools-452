@@ -1,8 +1,8 @@
-name=pic32-tools
+name=pic33-tools-452
 family=pic32
 version=20140530
 revision=3
-description=PIC32 GCC compiler version 4.5.1
+description=PIC32 Compiler for MX version 4.5.2
 compiler.smalldata=1024
 
 optimize=${option:optimize.flag}

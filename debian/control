@@ -1,4 +1,4 @@
-Source: pic32-tools
+Source: pic32-tools-452
 Section: compilers
 Priority: extra
 XBSC-Family: pic32
@@ -9,8 +9,11 @@ Standards-Version: 3.9.4
 #Vcs-Git: git://git.debian.org/collab-maint/pic32-tools.git
 #Vcs-Browser: http://git.debian.org/?p=collab-maint/pic32-tools.git;a=summary
 
-Package: pic32-tools
+Package: pic32-tools-452
 Architecture: any
 Depends: 
-Description: PIC32 Compiler for MX and MZ
- PIC32 Compiler for MX and MZ
+Description: PIC32 Compiler for MX version 4.5.2
+ Legacy PIC32 compiler for MX chips only.
+ .
+ This is GCC version 4.5.2 and includes Microchip PLIB for the compilation of older
+ legacy code.

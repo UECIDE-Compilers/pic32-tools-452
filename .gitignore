@@ -1,7 +1,7 @@
 debian/files
-debian/pic32-tools.debhelper.log
-debian/pic32-tools.substvars
-debian/pic32-tools/
+debian/pic32-tools-452.debhelper.log
+debian/pic32-tools-452.substvars
+debian/pic32-tools-452/
 pic32-tools-darwin-amd64.zip
 pic32-tools-linux-amd64.zip
 pic32-tools-linux-armel.zip
